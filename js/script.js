@@ -296,6 +296,8 @@ const next = document.getElementById("next");
 const imageLinks = [
   "https://indiantradition.netlify.app/",
   "https://lgerp.netlify.app/",
+  "",
+  "https://github.com/Sarthak-Jagetiya/Hotel-Management-System",
 ];
 
 images.forEach((slide, index) => {
@@ -303,8 +305,11 @@ images.forEach((slide, index) => {
 
   // Add click event listener to each image
   slide.addEventListener("click", () => {
-    // Open the link in a new window
-    window.open(imageLinks[index], "_blank");
+    // Check if the image has a corresponding link
+    if (imageLinks[index]) {
+      // Open the link in a new window
+      window.open(imageLinks[index], "_blank");
+    }
   });
 });
 
