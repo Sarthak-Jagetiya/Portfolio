@@ -289,7 +289,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const wrapper = document.querySelector(".work-carousel");
 const carousel = document.querySelector(".image-carousel");
 const images = document.querySelectorAll(".image-carousel img");
-const link = document.querySelectorAll(".text-link");
+const link = document.querySelector(".text-link"); // Selecting the link element
 const prev = document.getElementById("prev");
 const next = document.getElementById("next");
 
@@ -314,15 +314,13 @@ images.forEach((slide, index) => {
   });
 });
 
-link.forEach((textLink, index) => {
-  // Add click event listener to each link
-  textLink.addEventListener("click", () => {
-    // Check if the link has a corresponding link
-    if (imageLinks[index]) {
-      // Open the link in a new window
-      window.open(imageLinks[index], "_blank");
-    }
-  });
+// Add click event listener to the link element
+link.addEventListener("click", () => {
+  // Check if the current slide index is valid and has a corresponding link
+  if (imageLinks[counter]) {
+    // Open the corresponding link in a new window
+    window.open(imageLinks[counter], "_blank");
+  }
 });
 
 let counter = 0;
