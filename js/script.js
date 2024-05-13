@@ -289,6 +289,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const wrapper = document.querySelector(".work-carousel");
 const carousel = document.querySelector(".image-carousel");
 const images = document.querySelectorAll(".image-carousel img");
+const link = document.querySelectorAll(".text-link");
 const prev = document.getElementById("prev");
 const next = document.getElementById("next");
 
@@ -306,6 +307,17 @@ images.forEach((slide, index) => {
   // Add click event listener to each image
   slide.addEventListener("click", () => {
     // Check if the image has a corresponding link
+    if (imageLinks[index]) {
+      // Open the link in a new window
+      window.open(imageLinks[index], "_blank");
+    }
+  });
+});
+
+link.forEach((textLink, index) => {
+  // Add click event listener to each link
+  textLink.addEventListener("click", () => {
+    // Check if the link has a corresponding link
     if (imageLinks[index]) {
       // Open the link in a new window
       window.open(imageLinks[index], "_blank");

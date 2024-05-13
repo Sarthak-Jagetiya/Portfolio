@@ -1442,6 +1442,7 @@ z-index: 2;
   overflow: hidden;
   border-radius: 2rem;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .image-carousel img {
