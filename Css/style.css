@@ -309,7 +309,7 @@ body {
   animation-duration: 1s;
   animation-timing-function: ease-out; */
 
-  animation: anim-text 1050ms cubic-bezier(0, 0.45, 0.15, 1)
+  animation: animation-text 1050ms cubic-bezier(0, 0.45, 0.15, 1)
 }
 
 
@@ -343,10 +343,10 @@ body {
   animation-duration: 1s;
   animation-timing-function: ease-out; */
 
-  animation: anim-text 1050ms cubic-bezier(0, 0.45, 0.15, 1)
+  animation: animation-text 1050ms cubic-bezier(0, 0.45, 0.15, 1)
 }
 
-@keyframes anim-text {
+@keyframes animation-text {
   0% {
     transform: skew(0, 10deg) rotate(10deg) translate(200px, 1400px);
     opacity: 0
@@ -387,7 +387,7 @@ overflow: hidden;
 z-index: 999;
 } */
 
-.anim {
+.animation {
   position: relative;
   display: flex;
   align-items: center;
@@ -395,13 +395,13 @@ z-index: 999;
   z-index: 1;
 }
 
-.shape {
+.animation-shape {
   min-width: 30rem;
   min-height: 38rem;
   position: absolute;
 }
 
-.anim .shape:before {
+.animation .animation-shape:before {
   content: "";
   background-color: #18033C;
   border-top-left-radius: 10px;
@@ -432,14 +432,14 @@ z-index: 999;
   }
 }
 
-.anim .paperplane {
+.animation .paperplane-animation {
   position: absolute;
   z-index: 20;
   margin: -1rem 0 0 2rem;
-  animation: paperplane-anim 2200ms cubic-bezier(0, 0.45, 0.15, 1);
+  animation: paperplane-animation 2200ms cubic-bezier(0, 0.45, 0.15, 1);
 }
 
-@keyframes paperplane-anim {
+@keyframes paperplane-animation {
   0% {
     transform: rotate(50deg) translate(-500px, -250px);
     opacity: 0
@@ -456,7 +456,7 @@ z-index: 999;
   }
 }
 
-.anim .paperplane svg {
+.animation .paperplane-animation svg {
   margin-top: 0
 }
 
@@ -468,7 +468,7 @@ z-index: 999;
   z-index: 9;
 }
 
-@keyframes paperplane-anim {
+@keyframes paperplane-animation {
   0% {
     transform: rotate(50deg) translate(-500px, -250px);
     opacity: 0
@@ -492,7 +492,7 @@ z-index: 999;
 
 .intro-content .contact {
   transform-origin: top left;
-  animation: anim-text 1150ms cubic-bezier(0, 0.45, 0.15, 1)
+  animation: animation-text 1150ms cubic-bezier(0, 0.45, 0.15, 1)
 }
 
 .contact {

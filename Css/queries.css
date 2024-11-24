@@ -3,16 +3,16 @@
 /********************************/
 
 @media (max-width: 84em) {
-  .anim {
+  .animation {
     transform: translate(-1.6vw, -2vh);
   }
 
-  .shape {
+  .animation-shape {
     min-width: 28rem;
     min-height: 36rem;
   }
 
-  .anim .paperplane svg {
+  .animation .paperplane-animation svg {
     width: 42.1rem;
   }
 
@@ -129,16 +129,16 @@
 /********************************/
 
 @media (max-width: 73em) {
-  .anim {
+  .animation {
     transform: translate(-1.6vw, -3vh);
   }
 
-  .shape {
+  .animation-shape {
     min-width: 26rem;
     min-height: 32rem;
   }
 
-  .anim .paperplane svg {
+  .animation .paperplane-animation svg {
     width: 40.1rem;
   }
 
@@ -303,16 +303,16 @@
 /********************************/
 
 @media (max-width: 57em) {
-  .anim {
+  .animation {
     transform: translate(-3.6vw, -5vh);
   }
 
-  .shape {
+  .animation-shape {
     min-width: 22rem;
     min-height: 28rem;
   }
 
-  .anim .paperplane svg {
+  .animation .paperplane-animation svg {
     width: 32.1rem;
   }
 
@@ -948,16 +948,16 @@
 /********************************/
 
 @media (max-width: 51em) {
-  .anim {
+  .animation {
     transform: translate(-3.6vw, -3vh);
   }
 
-  .shape {
+  .animation-shape {
     min-width: 20rem;
     min-height: 24rem;
   }
 
-  .anim .paperplane svg {
+  .animation .paperplane-animation svg {
     width: 28.1rem;
   }
 
@@ -1176,16 +1176,16 @@
 /********************************/
 
 @media (max-width: 38em) {
-  .anim {
+  .animation {
     transform: translate(-3.6vw, -3vh);
   }
 
-  .shape {
+  .animation-shape {
     min-width: 16rem;
     min-height: 20rem;
   }
 
-  .anim .paperplane svg {
+  .animation .paperplane-animation svg {
     margin-left: -3rem;
     width: 24.1rem;
   }
@@ -1479,16 +1479,16 @@
 /********************************/
 
 @media (max-width: 30em) {
-  .anim {
+  .animation {
     transform: translate(4vw, 2vh);
   }
 
-  .shape {
+  .animation-shape {
     min-width: 12rem;
     min-height: 16rem;
   }
 
-  .anim .paperplane svg {
+  .animation .paperplane-animation svg {
     margin-left: -2rem;
     width: 18.1rem;
   }
@@ -1547,7 +1547,7 @@
   }
 
   .description-main {
-    margin-top: 8rem;
+    margin-top: 12rem;
     font-size: 1.3rem;
   }
 
@@ -1774,20 +1774,20 @@
 
 @media (max-width: 26em) {
   .fixed-nav {
-    left: 10vw;
+    left: 18vw;
   }
 
-  .anim {
+  .animation {
     transform: translate(-8vw, 3vh);
     /* transform: translate(0, 0); */
   }
 
-  .shape {
+  .animation-shape {
     min-width: 12rem;
     min-height: 16rem;
   }
 
-  .anim .paperplane svg {
+  .animation .paperplane-animation svg {
     margin-left: -2rem;
     width: 18.1rem;
   }
