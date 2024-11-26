@@ -29,7 +29,7 @@ Large: 1.8
 #8c85f3, #eea1be
 
 -- Shades: 
-#ffa6a6
+  #ffa6a6
 
 -- Accents:
 -- Greys:
@@ -1680,6 +1680,7 @@ z-index: 2;
   color: #fff;
   align-self: end;
   padding: 1.2rem;
+  transition: all 0.2s;
 }
 
 .btn--form:hover {
@@ -1691,13 +1692,9 @@ z-index: 2;
   display: none;
 }
 
-.contact-animation:hover {
+/* .contact-animation:hover {
   background-color: #ffa6a6;
   color: #fff;
-}
-
-/* .contact-animation {
-  display: none;
 } */
 
 .cta *:focus {

@@ -357,3 +357,44 @@ slideImage();
 // Add click event listeners
 prev.addEventListener("click", prevSlide);
 next.addEventListener("click", nextSlide);
+
+// Initialize EmailJS with your user ID
+emailjs.init("ttJms5aWVbDKXbm1o");
+
+// Handle form submission
+document
+  .getElementById("cta-form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent default form submission
+
+    const fullName = document.getElementById("full-name").value;
+    const phone = document.getElementById("phone").value;
+    const email = document.getElementById("email").value;
+
+    // Email data
+    const templateParams = {
+      to_email: "sarthakjagetiya1001@gmail.com", // Replace with your email
+      full_name: fullName,
+      phone: phone,
+      email: email,
+    };
+
+    // Send the email using EmailJS
+    emailjs
+      .send("service_2hwkayb", "template_eaydkk4", templateParams) // Correct the parameters to use form data
+      .then(
+        function (response) {
+          console.log("Email sent successfully!");
+          document
+            .querySelector(".contact-animation")
+            .classList.remove("display-none");
+          document.querySelector(".btn-contact").classList.add("display-none");
+          document.getElementById("full-name").value = "";
+          document.getElementById("phone").value = "";
+          document.getElementById("email").value = "";
+        },
+        function (error) {
+          console.error("Failed to send email:", error);
+        }
+      );
+  });
