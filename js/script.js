@@ -289,7 +289,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const wrapper = document.querySelector(".work-carousel");
 const carousel = document.querySelector(".image-carousel");
 const images = document.querySelectorAll(".image-carousel img");
-const link = document.querySelector(".text-link"); // Selecting the link element
+const link = document.querySelector(".text-link");
 const prev = document.getElementById("prev");
 const next = document.getElementById("next");
 
@@ -335,7 +335,33 @@ const slideImage = () => {
 
   // Check if there's a next image
   next.style.color = counter < images.length - 1 ? "black" : "gray";
+
+  if (imageLinks[counter] == "") {
+    link.style.display = "none"; // Hide the link if no valid link is present
+  } else {
+    link.style.display = "none"; // Hide the link by default
+    link.style.opacity = "0"; // Hide the link opacity
+  }
 };
+
+// Add hover event to show link and apply blur effect
+images.forEach((img, index) => {
+  img.addEventListener("mouseenter", () => {
+    if (imageLinks[index] !== "") {
+      link.style.display = "block"; // Show link on hover
+      link.style.opacity = "1"; // Set opacity to fully visible
+      img.style.filter = "blur(4px)"; // Apply blur to image
+    }
+  });
+
+  img.addEventListener("mouseleave", () => {
+    if (imageLinks[index] !== "") {
+      link.style.display = "none"; // Hide link when hover ends
+      link.style.opacity = "0"; // Reset opacity
+      img.style.filter = "none"; // Remove blur effect
+    }
+  });
+});
 
 const prevSlide = () => {
   if (counter > 0) {

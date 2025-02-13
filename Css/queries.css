@@ -269,7 +269,11 @@
   }
 
   /********************************/
-  /* SKILLS */
+  /* EXPERIENCE */
+  .internship-container {
+    flex-direction: column;
+  }
+
   .community-wrapper {
     margin-left: 140px;
   }
@@ -453,11 +457,6 @@
   /* EXPERIENCE */
   .internship {
     font-size: 1.5rem;
-  }
-
-  .apostrophe {
-    top: 5%;
-    left: 13%;
   }
 
   .section-experience {
@@ -1310,8 +1309,8 @@
   }
 
   .apostrophe {
-    top: 5%;
-    left: 22%;
+    font-size: 15rem;
+    top: -10.5rem;
   }
 
   .internship-logo {
@@ -1639,8 +1638,7 @@
 
   .apostrophe {
     font-size: 12rem;
-    top: 5%;
-    left: 10%;
+    top: -8.5rem;
   }
 
   .internship-heading {
@@ -1823,6 +1821,7 @@
 
   .apostrophe {
     font-size: 9rem;
+    top: -6.5rem;
   }
 
   .container-details {
